@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="h-screen w-full flex justify-center items-center flex-col"
+      id="app"
+    >
+      <h1 class="font-bold text-3xl">Data Covid terkini</h1>
+      <span>Orang Sembuh : {{ orangSembuh }}</span>
+      <span>Orang Meninggal : {{orangMeninggal}}</span>
+      <span>Orang Terpapar : 6000</span>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

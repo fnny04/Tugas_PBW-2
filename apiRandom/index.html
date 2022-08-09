@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApiRandom</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="h-screen w-full flex justify-center items-center flex-col"
+      id="app"
+    >
+      <img class="w-100 rounded-full" :src="profileUser" alt="" />
+      <h1 class="m-2 font-bold">{{nameUser}} {{nameLast}}</h1>
+      <button class="bg-blue-300 p-2 m-2 rounded" @click="generateUser()">
+        klik me
+      </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
